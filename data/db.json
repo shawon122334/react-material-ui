@@ -23,6 +23,12 @@
       "details": "we are gonna celebrate jacobs birthday next week ",
       "category": "reminders",
       "id": 4
+    },
+    {
+      "title": "my exam ",
+      "details": "on 6th may",
+      "category": "reminders",
+      "id": 5
     }
   ]
 }
