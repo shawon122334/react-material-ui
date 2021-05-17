@@ -29,6 +29,7 @@ export default function Create() {
   const [detailsError, setDetailsError] = useState(false)
   const [category, setCategory] = useState('money')
 
+  //this is the function for submit button.if title and details fields are empty then it will show error
   const handleSubmit = (e) => {
     e.preventDefault()
     setTitleError(false)
@@ -40,13 +41,14 @@ export default function Create() {
     if (details == '') {
       setDetailsError(true)
     }
+    //if there are title and details then we fetch the database json server and post (save) data to the db 
     if (title && details) {
       fetch('http://localhost:8000/notes', {
         method: 'POST',
         headers: {"Content-type": "application/json"},
         body: JSON.stringify({ title, details, category })
       }).then(() => history.push('/'))
-    } 
+    } //then it redirects to homepage 
   }
 
   return (
