@@ -17,6 +17,18 @@
       "details": "on friday i have a match with my friends",
       "category": "reminders",
       "id": 5
+    },
+    {
+      "title": "jacob's birthday",
+      "details": "on 26th may ",
+      "category": "reminders",
+      "id": 6
+    },
+    {
+      "title": "project",
+      "details": "office project should be done in next week ",
+      "category": "work",
+      "id": 7
     }
   ]
 }
