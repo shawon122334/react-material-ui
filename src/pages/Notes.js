@@ -12,6 +12,7 @@ export default function Notes() {
       .then(data => setNotes(data))
   }, [])
 
+  //this function is for deleting notes 
   const handleDelete=async (id)=>{
      await fetch('http://localhost:8000/notes/'+id,{
        method : 'DELETE'
