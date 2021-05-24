@@ -29,6 +29,30 @@
       "details": "office project should be done in next week ",
       "category": "work",
       "id": 7
+    },
+    {
+      "title": "Assignment",
+      "details": "i have an assignment to submit by tomorrow",
+      "category": "reminders",
+      "id": 8
+    },
+    {
+      "title": "class ",
+      "details": "next class will be on thursday ",
+      "category": "reminders",
+      "id": 9
+    },
+    {
+      "title": "Plumber",
+      "details": "i need a plumber at night ",
+      "category": "reminders",
+      "id": 10
+    },
+    {
+      "title": "withdraw money",
+      "details": "withdrawn some money for the expanse ",
+      "category": "money",
+      "id": 11
     }
   ]
 }
