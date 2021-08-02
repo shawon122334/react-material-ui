@@ -31,15 +31,15 @@ export default function Create() {
 
   //this is the function for submit button.if title and details fields are empty then it will show error
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault() //the page won't refreshed on submit
     setTitleError(false)
     setDetailsError(false)
 
     if (title == '') {
-      setTitleError(true)
+      setTitleError(true) //if the title is empty
     }
     if (details == '') {
-      setDetailsError(true)
+      setDetailsError(true) //if the details is empty
     }
     //if there are title and details then we fetch the database json server and post (save) data to the db 
     if (title && details) {
@@ -61,7 +61,7 @@ export default function Create() {
       >
         Create a New Note
       </Typography>
-      
+      {/* first we tell the form not to use built in validation.and turned off auto complete */}
       <form noValidate autoComplete="off" onSubmit={handleSubmit}>
         <TextField className={classes.field}
           onChange={(e) => setTitle(e.target.value)}
@@ -81,7 +81,7 @@ export default function Create() {
           rows={4}
           fullWidth
           required
-          error={detailsError}
+          erro r={detailsError}
         />
 
         {/* <Radio value="hello" />
@@ -104,6 +104,7 @@ export default function Create() {
           endIcon={<KeyboardArrowRightIcon />}>
           Submit
         </Button> 
+        {/* button should be inside the form for onSubmit acton */}
       </form>
 
       
